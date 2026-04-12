@@ -20,7 +20,7 @@ const sessionSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  } 
 );
 
 // tự động xoá khi hết hạn
