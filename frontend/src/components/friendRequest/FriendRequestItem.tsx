@@ -19,7 +19,7 @@ const FriendRequestItem = ({ requestInfo, actions, type }: RequestItemProps) => 
   }
 
   return (
-    <d iv className="flex items-center justify-between rounded-lg shadow-md border border-primary-foreground p-3">
+    <div className="flex items-center justify-between rounded-lg shadow-md border border-primary-foreground p-3">
       <div className="flex items-center gap-3">
         <UserAvatar
           type="sidebar"
@@ -31,7 +31,7 @@ const FriendRequestItem = ({ requestInfo, actions, type }: RequestItemProps) => 
         </div>
       </div>
       {actions}
-    </d>
+    </div>
   );
 };
 
