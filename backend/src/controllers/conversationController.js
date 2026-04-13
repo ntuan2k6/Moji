@@ -206,7 +206,7 @@ export const markAsSeen = async (req, res) => {
       return res.status(200).json({ message: "Sender không cần mark as seen" });
     }
 
-    const updated = await Conversation.findByIdAndUpdate( 
+    const updated = await Conversation.findByIdAndUpdate(
       conversationId,
       {
         $addToSet: { seenBy: userId },
